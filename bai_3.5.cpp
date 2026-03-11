@@ -35,11 +35,12 @@ int main() {
     scanf("%d", &x);
     int ketQua = kiemTraDoanSo(a, n, x);
     if (ketQua != -1) {
-        printf("Chuc mung! So %d co ton tai trong day bi mat tai vi tri (index): %d\n", x, ketQua);
+        printf("so co trong day: %d\n", x, ketQua);
     } else {
-        printf("Rat tiec! So %d khong co trong day bi mat.\n", x);
+        printf("so khong co trong day.\n", x);
     }
 
     return 0;
 }
+
 
