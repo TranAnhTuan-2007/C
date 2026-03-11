@@ -2,9 +2,8 @@
 
 void nhapDaySoThuc(float a[], int *n) {
     do {
-        printf("Nhap vao so phan tu n (3 < n <= 100): ");
+        printf("Nhap n (3 < n <= 100): ");
         scanf("%d", n);
-        if (*n <= 3 || *n > 100) printf("So phan tu khong hop le, vui long nhap lai!\n");
     } while (*n <= 3 || *n > 100);
 
     for (int i = 0; i < *n; i++) {
@@ -14,25 +13,25 @@ void nhapDaySoThuc(float a[], int *n) {
 }
 
 void inDaySoThuc(float a[], int n) {
-    printf("Day so vua nhap la: ");
+    printf("Day so: ");
     for (int i = 0; i < n; i++) {
-        printf("%.2f  ", a[i]);
+        printf(" %.2f", a[i]);
     }
     printf("\n");
 }
 
 float tinhTong(float a[], int n) {
-    float s = 0;
-    for (int i = 0; i < n; i++) {
+    float s=0;
+    for (int i= 0; i<n; i++) {
         s += a[i];
     }
     return s;
 }
 
 void tinhTBCongDuong(float a[], int n) {
-    float tongDuong = 0;
-    int dem = 0;
-    for (int i = 0; i < n; i++) {
+    float tongDuong=0;
+    int dem=0;
+    for (int i=0; i<n; i++) {
         if (a[i] > 0) {
             tongDuong += a[i];
             dem++;
@@ -40,9 +39,9 @@ void tinhTBCongDuong(float a[], int n) {
     }
     if (dem > 0) {
     	float tbc = tongDuong / dem;
-        printf("Trung binh cong cac phan tu duong: %.2f\n", tongDuong / dem);
+        printf("TBC phan tu duong: %.2f\n", tongDuong / dem);
     } else {
-        printf("Trong day khong co phan tu duong.\n");
+        printf("O phan tu duong.\n");
     }
 }
 
@@ -53,8 +52,9 @@ int main() {
     nhapDaySoThuc(a, &n);
     inDaySoThuc(a, n);
 
-    printf("Tong cac phan tu trong day: %.2f\n", tinhTong(a, n));
+    printf("Tong phan tu: %.2f\n", tinhTong(a, n));
     tinhTBCongDuong(a, n);
 
     return 0;
 }
+
