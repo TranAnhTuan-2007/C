@@ -2,12 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 
-void taoDayBiMat(int a[], int n) {
+void sinhDS(int a[], int n) {
     srand(time(NULL));
     for (int i = 0; i < n; i++) {
         a[i] = rand() % 100; 
     }
-    printf("He thong da tao xong day so bi mat!\n");
+}
+
+void inDS(int a[], int n){
+int i;
+for(i=0; i<n;i++)
+    printf("%.2f",a[i]);
 }
 
 int kiemTraDoanSo(int a[], int n, int x) {
@@ -21,17 +26,14 @@ int main() {
     int a[30], n, x;
 
     do {
-        printf("Nhap so luong phan tu n (2 < n <= 30): ");
+        printf("Nhap n (2 < n <= 30): ");
         scanf("%d", &n);
     } while (n <= 2 || n > 30);
 
-    taoDayBiMat(a, n);
-
-    printf("Moi ban doan mot so bat ky trong khoang [0, 100): ");
+    sinhDS(a, n);
+    printf("Doan so bat ky [0, 100): ");
     scanf("%d", &x);
-
     int ketQua = kiemTraDoanSo(a, n, x);
-
     if (ketQua != -1) {
         printf("Chuc mung! So %d co ton tai trong day bi mat tai vi tri (index): %d\n", x, ketQua);
     } else {
@@ -40,3 +42,4 @@ int main() {
 
     return 0;
 }
+
