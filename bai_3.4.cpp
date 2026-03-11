@@ -6,7 +6,7 @@ void nhapDS(int a[], int *n) {
         printf("Nhap n (2 <= n <= 30): ");
         scanf("%d", n);
     } while (*n < 2 || *n > 30);
-    for (int i = 0; i < *n; i++) {
+    for (int i=0; i<*n; i++) {
         printf("a[%d] = ", i);
         scanf("%d", &a[i]);
     }
@@ -14,7 +14,7 @@ void nhapDS(int a[], int *n) {
 
 void inDS(int a[], int n) {
     printf("Day so: ");
-    for (int i = 0; i < n; i++) printf("%d ", a[i]);
+    for (int i=0; i<n; i++) printf("%d ", a[i]);
     printf("\n");
 }
 
@@ -28,18 +28,18 @@ int timMin(int a[], int n) {
 int demChan(int a[], int n) {
     int dem = 0;
     for (int i = 0; i < n; i++)
-        if (a[i] % 2 == 0) dem++;
+        if (a[i]%2== 0) dem++;
     return dem;
 }
 
 int kiemTraTangDan(int a[], int n) {
-    for (int i = 0; i < n - 1; i++)
+    for (int i=0; i<n-1; i++)
         if (a[i] > a[i+1]) return 0;
     return 1;
 }
 
 void inSoChinhPhuong(int a[], int n) {
-    printf("Cac so chinh phuong trong day: ");
+    printf("so chinh phuong: ");
     for (int i = 0; i < n; i++) {
         if (a[i] < 0) continue;
         int can = sqrt(a[i]);
@@ -53,12 +53,13 @@ int main() {
     nhapDS(a, &n);
     inDS(a, n);
     
-    printf("Phan tu nho nhat: %d\n", timMin(a, n));
-    printf("So luong phan tu chan: %d\n", demChan(a, n));
+    printf("so nho nhat: %d\n", timMin(a, n));
+    printf("so phan tu chan: %d\n", demChan(a, n));
     
-    if (kiemTraTangDan(a, n)) printf("Day so dang tang dan.\n");
-    else printf("Day so khong tang dan.\n");
+    if (kiemTraTangDan(a, n)) printf("day so tang.\n");
+    else printf("day so khong tang.\n");
     
     inSoChinhPhuong(a, n);
     return 0;
 }
+
