@@ -31,8 +31,10 @@ int main() {
     int n;
     float a[100], b[100], c[100];
     int nb = 0, nc = 0;
-
-    printf("Nhap n: "); scanf("%d", &n);
+do {
+        printf("Nhap n: "); 
+		scanf("%d", &n);
+    } while (n < 3 || n >= 50);
     for(int i = 0; i < n; i++) {
         printf("a[%d] = ", i);
         scanf("%f", &a[i]);
