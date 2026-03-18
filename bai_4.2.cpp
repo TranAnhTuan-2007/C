@@ -29,9 +29,11 @@ void xoa(float a[], int *n, int p) {
 
 int main() {
     int n;
+    do {
+        printf("Nhap n: "); 
+		scanf("%d", &n);
+    } while (n <= 2 || n > 30);
     float a[100];
-    
-    printf("Nhap n: "); scanf("%d", &n);
     nhap(a, n);
     
     float x; int k;
