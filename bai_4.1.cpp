@@ -29,8 +29,10 @@ void thayThe(int *a, int n) {
 
 int main() {
     int n;
-    printf("Nhap n: "); 
-    scanf("%d", &n);
+    do {
+        printf("Nhap n: "); 
+    	scanf("%d", &n);
+    } while (n <= 3 || n > 40);
     
     int a[100]; 
     nhap(a, n);
@@ -39,7 +41,7 @@ int main() {
     xuat(a, n);
     
     if(kiemTra(a, n) == 1) {
-        printf("Tat ca phan tu vi tri le deu la so duong\n");
+        printf("Tat ca phan tu vi tri le la so duong\n");
     } else {
         printf("Khong dung dieu kien de bai\n");
     }
