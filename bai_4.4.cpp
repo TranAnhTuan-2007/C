@@ -22,7 +22,10 @@ int* xoaPhanTu(int *a, int *n, int p) {
 
 int main() {
     int n;
-    printf("Nhap n: "); scanf("%d", &n);
+    do {
+        printf("Nhap n: "); 
+		scanf("%d", &n);
+    } while (n < 2 || n >= 40);
 
     int *a = (int*)malloc(n * sizeof(int));
     for(int i = 0; i < n; i++) {
