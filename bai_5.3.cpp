@@ -35,7 +35,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nCac so tu duong cheo chinh tro len:\n");
+    printf("\nCac so tren duong cheo chinh:\n");
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
             if(j >= i) { 
