@@ -42,7 +42,7 @@ int main() {
     float a[15][15];
 
     do {
-        printf("Nhap kich thuoc ma tran vuong n (2 <= n <= 10): ");
+        printf("Nhap ma tran vuong n (2 <= n <= 10): ");
         scanf("%d", &n);
     } while(n < 2 || n > 10);
 
@@ -55,9 +55,9 @@ int main() {
     tbcDuongCheoChinh(a, n);
 
     if(kiemTraToanDuong(a, n) == 1) {
-        printf("Ma tran nay toan so duong\n");
+        printf("Ma tran toan so duong\n");
     } else {
-        printf("Ma tran nay ko phai toan so duong\n");
+        printf("Ma tran ko phai toan so duong\n");
     }
 
     return 0;
