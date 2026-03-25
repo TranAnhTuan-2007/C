@@ -55,9 +55,9 @@ int main() {
     tbcDuongCheoChinh(a, n);
 
     if(kiemTraToanDuong(a, n) == 1) {
-        printf("=> Ma tran nay toan so duong\n");
+        printf("Ma tran nay toan so duong\n");
     } else {
-        printf("=> Ma tran nay ko phai toan so duong\n");
+        printf("Ma tran nay ko phai toan so duong\n");
     }
 
     return 0;
