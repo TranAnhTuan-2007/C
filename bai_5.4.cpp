@@ -23,7 +23,7 @@ void tbcDuongCheoChinh(float a[][15], int n) {
     for(int i = 0; i < n; i++) {
         sum += a[i][i];
     }
-    printf("TBC cac phan tu tren duong cheo chinh: %.2f\n", sum / n);
+    printf("TBC tren duong cheo chinh: %.2f\n", sum / n);
 }
 
 int kiemTraToanDuong(float a[][15], int n) {
