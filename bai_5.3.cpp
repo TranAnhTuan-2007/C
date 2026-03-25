@@ -4,7 +4,7 @@ int main() {
     int n, a[50][50];
     
     do {
-        printf("Nhap kich thuoc ma tran vuong n (3 <= n <= 10): ");
+        printf("Nhap ma tran vuong n (3 <= n <= 10): ");
         scanf("%d", &n);
     } while(n < 3 || n > 10);
     
