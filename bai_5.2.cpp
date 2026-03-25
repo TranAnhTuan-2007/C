@@ -33,7 +33,7 @@ for(int i = 0; i < m; i++) {
 
     float x;
     int dem = 0;
-    printf("Nhap so x can dem: ");
+    printf("Nhap so can dem: ");
     scanf("%f", &x);
     
     for(int i = 0; i < m; i++) {
@@ -56,7 +56,7 @@ for(int i = 0; i < m; i++) {
             printf("%.2f\t", a[i][j]);
             tongHang += a[i][j];
         }
-        printf("  -> Tong hang %d: %.2f\n", i, tongHang);
+        printf("Tong hang %d: %.2f\n", i, tongHang);
     }
 
     return 0;
