@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void xuLyDNA(char dna[]) {
+void demVaTinhDNA(char dna[]) {
     int a = 0, t = 0, g = 0, c = 0;
     int len = strlen(dna);
 
@@ -35,6 +35,6 @@ int main() {
         dna[len - 1] = '\0';
     }
     
-    xuLyDNA(dna);
+    demVaTinhDNA(dna);
     return 0;
 }
