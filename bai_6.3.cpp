@@ -32,12 +32,12 @@ void vietHoaChuCaiDau(char s[]) {
 }
 
 void inCacTu(char s[]) {
-    int count = 1;
-    printf("%d. ", count);
+    int dem = 1;
+    printf("%d. ", dem);
     for (int i = 0; i < strlen(s); i++) {
         if (s[i] == ' ') {
-            count++;
-            printf("\n%d. ", count);
+            dem++;
+            printf("\n%d. ", dem);
         } else {
             printf("%c", s[i]);
         }
