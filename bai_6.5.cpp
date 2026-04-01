@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int demSoTu(char s[]) {
+int demTu(char s[]) {
     int len = strlen(s);
     if (len == 0) return 0;
     
@@ -54,7 +54,7 @@ int main() {
         s[len - 1] = '\0';
     }
 
-    printf("So tu: %d\n", demSoTu(s));
+    printf("So tu: %d\n", demTu(s));
     inTenSV(s);
 
     printf("Nhap tu x can dem: ");
