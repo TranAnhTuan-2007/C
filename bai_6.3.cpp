@@ -58,6 +58,7 @@ int main() {
     printf("Chuoi chuan hoa: '%s'\n", s);
     
     vietHoaChuCaiDau(s);
+    printf("Chuoi khi duoc viet hoa chu cai dau: '%s'\n",s);
     inCacTu(s);
     
     return 0;
