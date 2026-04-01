@@ -2,7 +2,7 @@
 #include <string.h>
 
 void nhapChuoi(char s[]) {
-    printf("Nhap vao 1 chuoi: ");
+    printf("Nhap chuoi: ");
     fgets(s, 100, stdin);
     
     int len = strlen(s);
@@ -12,7 +12,7 @@ void nhapChuoi(char s[]) {
 }
 
 void inChuoi(char s[]) {
-    printf("Chuoi vua nhap: %s\n", s);
+    printf("Chuoi: %s\n", s);
 }
 
 void inNguocChuoi(char s[]) {
