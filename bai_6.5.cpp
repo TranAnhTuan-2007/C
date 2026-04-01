@@ -33,7 +33,7 @@ void inTenSV(char s[]) {
 }
 
 int demKyTu(char s[], char x) {
-    int count = 0;
+    int dem = 0;
     int len = strlen(s);
     for (int i = 0; i < len; i++) {
         if (s[i] == x) {
