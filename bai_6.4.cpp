@@ -25,7 +25,7 @@ void thayThe(char s[]) {
 
 int main() {
     char s[100];
-    printf("Nhap chuoi s: ");
+    printf("Nhap chuoi: ");
     fgets(s, 100, stdin);
     
     int len = strlen(s);
@@ -36,7 +36,7 @@ int main() {
     printf("So tu nguyen am: %d\n", demNguyenAm(s));
     
     thayThe(s);
-    printf("Chuoi khi thay the: %s\n", s);
+    printf("Chuoi thay the: %s\n", s);
     
     return 0;
 }
