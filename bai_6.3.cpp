@@ -46,7 +46,7 @@ void inCacTu(char s[]) {
 
 int main() {
     char s[100];
-    printf("Nhap chuoi s: ");
+    printf("Nhap chuoi: ");
     fgets(s, 100, stdin);
     
     int len = strlen(s);
