@@ -16,7 +16,7 @@ void inChuoi(char s[]) {
 }
 
 void inNguocChuoi(char s[]) {
-    printf("Chuoi theo thu tu nguoc lai: ");
+    printf("Chuoi nguoc lai: ");
     int len = strlen(s);
     for (int i = len - 1; i >= 0; i--) {
         printf("%c", s[i]);
