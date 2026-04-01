@@ -11,7 +11,7 @@ int demTu(char s[]) {
             dem++;
         }
     }
-    return count;
+    return dem;
 }
 
 void inTenSV(char s[]) {
