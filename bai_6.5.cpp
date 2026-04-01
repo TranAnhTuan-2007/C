@@ -5,10 +5,10 @@ int demTu(char s[]) {
     int len = strlen(s);
     if (len == 0) return 0;
     
-    int count = 1; 
+    int dem = 1; 
     for (int i = 0; i < len; i++) {
         if (s[i] == ' ') {
-            count++;
+            dem++;
         }
     }
     return count;
@@ -37,10 +37,10 @@ int demKyTu(char s[], char x) {
     int len = strlen(s);
     for (int i = 0; i < len; i++) {
         if (s[i] == x) {
-            count++;
+            dem++;
         }
     }
-    return count;
+    return dem;
 }
 
 int main() {
